@@ -2,8 +2,8 @@
 #include <ctype.h>
 
 /**
- * int _islower - check the code.
- *@c: is letter required
+ * _islower - check the code.
+ * @c: is letter required
  *
  * Return: Always 0.
  */
