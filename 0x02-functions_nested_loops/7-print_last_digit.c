@@ -4,21 +4,25 @@
  * print_last_digit - check the code.
  * print the last digit of a number
  *
- * @m: is letter required
+ * @n: number being tested
  *
  * Return: Always 0.
  */
 
-int print_last_digit(int r)
+int print_last_digit(int n)
 {
+	int l;
 
-	if (r % 10 && r == 'm')
+	l = n % 10;
+	if (l < 0)
 	{
-		return ('m');
+		_putchar(-l + 48);
+		return (-l);
 	}
-	else if (-(-r % 10) && r == 'm')
+	else
 	{
-		return ('m');
+		_putchar(l + 48);
+		return (l);
 	}
 
 }
